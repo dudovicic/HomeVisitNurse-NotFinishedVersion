@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <color name="colorPrimary">#ec3434</color>
+    <color name="colorPrimaryDark">#ec3434</color>
+    <color name="colorAccent">#ffffff</color>
+    <item name="red" type="color">#ec3434</item>
+    <color name="black">#000000</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="gray">#969393</color>
+
+    <color name="colorText">#000000</color>
+    <color name="colorTextHint">#51d8c7</color>
+
+
+
+</resources>

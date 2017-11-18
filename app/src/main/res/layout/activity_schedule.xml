@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    android:id="@+id/relativeLayout1">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/text_hello"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:text=""
+            android:layout_marginTop="10dp"
+            /></LinearLayout>
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title1"
+        android:layout_below="@id/linearLayout1"
+        android:textColor="@color/colorAccent"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:shadowRadius="5.0"
+        android:shadowDx="5.0"
+        android:shadowDy="5.0"
+        android:background="@color/red"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/DATE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp"
+        android:layout_below="@id/title1"
+        android:paddingTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/DATE">
+
+
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CCC"
+            android:paddingBottom="1dp"
+            android:paddingRight="1dp">
+
+
+            <TextView
+                android:id="@+id/TextView22"
+                android:gravity="center"
+                android:text="M"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView23"
+                android:gravity="center"
+                android:text="T"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView24"
+                android:gravity="center"
+                android:text="W"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView25"
+                android:gravity="center"
+                android:text="T"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView26"
+                android:gravity="center"
+                android:text="F"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#CCC"
+            android:paddingBottom="1dp"
+            android:paddingRight="1dp">
+
+
+
+            <TextView
+                android:id="@+id/textView31"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+
+                android:clickable="true"
+                android:onClick="clickHandlerCell"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView32"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView33"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView34"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView35"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#CCC"
+            android:paddingBottom="1dp"
+            android:paddingRight="1dp">
+
+
+
+            <TextView
+                android:id="@+id/textView41"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView42"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView43"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView44"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView45"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#CCC"
+            android:paddingBottom="1dp"
+            android:paddingRight="1dp">
+
+
+
+            <TextView
+                android:id="@+id/textView51"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView52"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView53"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView54"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView55"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#CCC"
+            android:paddingBottom="1dp"
+            android:paddingRight="1dp">
+
+
+
+            <TextView
+                android:id="@+id/textView61"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView62"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView63"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView64"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView65"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#CCC"
+            android:paddingBottom="1dp"
+            android:paddingRight="1dp">
+
+
+
+            <TextView
+                android:id="@+id/textView71"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView72"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView73"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView74"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView75"
+                android:text="Conditions"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:padding="5dp"
+                android:background="#FFF"
+                >
+            </TextView>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</RelativeLayout>
